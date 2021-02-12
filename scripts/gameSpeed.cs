@@ -25,55 +25,7 @@ public class gameSpeed : MonoBehaviour
     {
     }
 
-    state changeState (state current)
-    {/*
-        if (current == state.minWait)
-        {
-           // float count = 0;
-            count += Time.unscaledDeltaTime;
-            print(count);
-            if (count >= WaitBeforeDecrease)
-                current = state.Increasing;
-        }
-        else if (current == state.Increasing)
-        {
-            Time.timeScale += increaseSpeed * Time.unscaledDeltaTime;
-            if (Time.timeScale >= 2f)
-            {
-                Time.timeScale = 2f;
-                current = state.maxWait;
-            }
-        }
-
-        else if (current == state.maxWait)
-        {
-            count = 0;
-            count += Time.unscaledDeltaTime;
-            if (count >= (WaitBeforeDecrease * 2))
-            {
-                
-                Time.timeScale -= increaseSpeed * Time.unscaledDeltaTime;
-                if (Time.timeScale <= 1f)
-                {
-                    Time.timeScale = 1f;
-                    current = state.Decreasing;
-                }
-            }
-        }
-
-        else if (current == state.Decreasing)
-        {
-           Time.timeScale -= increaseSpeed * Time.unscaledDeltaTime;
-            if (Time.timeScale <= 1f)
-            {
-                Time.timeScale = 1f;
-                current = state.minWait;
-            }
-        }
-       */
-       
-        return current;
-    }
+    
     
     ///////////
     void ChangeTime()
